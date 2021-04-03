@@ -41,7 +41,7 @@ def gradient_descent(x, y, epochs=2000, alpha=0.0001, theta0=0, theta1=0):
         cost_hist.append((1/(2*n)) * np.sum(np.square(y_pred - y)))
         
     print("\n{2}\n T0: {0}\n T1: {1}\n".format(theta0, theta1, i))
-    #cost_plot(epochs, cost_hist)
+    cost_plot(epochs, cost_hist)
     return theta0, theta1
         
 def main():
